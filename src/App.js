@@ -1,17 +1,20 @@
 import React from "react"
+import { useState } from "react"
 
 
 const App=() =>{
-  const apple=()=>{
-    alert ("function called");
+  const [data,setData]=useState("neha")
+  const updateData=() =>
+  {
+    setData("neha kumari")
   }
-  return (
+  console.warn("__________");
+  return(
     <div className="App">
-      <h1>hello world</h1>
-      <button onClick={apple}>click me</button>
-    
+      <h1>{data}</h1>
+      <button onClick ={updateData}>updateData</button>
     </div>
-  )
+  );
 }
-
 export default App;
+
