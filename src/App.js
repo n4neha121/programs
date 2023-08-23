@@ -1,18 +1,18 @@
 import React from "react"
-import { useState } from "react"
-import './App.css'
+import {useState} from "react"
+
 
 const App=() =>{
-  const [data,setData]=useState("neha")
+  const [count,setCount]=useState(0)
   const updateData=() =>
   {
-    setData("neha kumari")
+    setCount(count+1)
     
   }
   console.log("__________");
   return(
     <div className="App">
-      <h1>{data}</h1>
+      <h1>{count}</h1>
       <button onClick ={updateData}>updateData</button>
     </div>
   );
