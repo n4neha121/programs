@@ -1,14 +1,15 @@
 import React from "react"
 import { useState } from "react"
-
+import './App.css'
 
 const App=() =>{
   const [data,setData]=useState("neha")
   const updateData=() =>
   {
     setData("neha kumari")
+    
   }
-  console.warn("__________");
+  console.log("__________");
   return(
     <div className="App">
       <h1>{data}</h1>
